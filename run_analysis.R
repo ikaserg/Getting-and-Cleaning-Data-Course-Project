@@ -1,4 +1,4 @@
-fpath <- 'D:\\Learning\\R\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset'
+#fpath <- 'D:\\Learning\\R\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset'
 x_test_file = 'x_test.txt'
 y_test_file = 'y_test.txt'
 x_train_file = 'x_train.txt'
