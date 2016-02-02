@@ -2,6 +2,7 @@
 x_test_file = 'x_test.txt'
 y_test_file = 'y_test.txt'
 x_train_file = 'x_train.txt'
+y_train_file = 'y_train.txt'
 
 # Load Test dataset
 y_test <- read.table(file.path(fpath, 'test', y_test_file))
