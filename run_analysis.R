@@ -1,4 +1,4 @@
-#fpath <- 'D:\\Learning\\R\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset'
+fpath <- 'D:\\Learning\\R\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset'
 x_test_file = 'x_test.txt'
 y_test_file = 'y_test.txt'
 x_train_file = 'x_train.txt'
@@ -26,7 +26,7 @@ X_merge <- rbind(X_train, X_test)
 flst <- read.table(file.path(fpath, 'features.txt'))
 
 #select mean() and std() features
-tiny_ft <- ft[grep("-std\\(\\)|-mean\\(\\)", ft$V2),]
+tiny_ft <- flst[grep("-std\\(\\)|-mean\\(\\)", flst$V2),]
 X_merge <- X_merge[,c(l_test_ind, tiny_ft$V1)]
 
 # step 3, set descriptive activity names to name the activities in the data set
